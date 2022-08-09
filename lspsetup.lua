@@ -19,3 +19,13 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+-- special cases:
+
+-- by default elixirls doesn't have a cmd set
+-- see: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#elixirls
+-- .setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   cmd = { ""}
+-- }
